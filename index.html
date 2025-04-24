@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            TakeMe2Prom
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel = "stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <div>
+                <h1>Take Me 2 Prom</h1>
+            </div>
+        </div>
+        <main>
+            <div class="container">
+                <div class="content" id="Nathan">
+                    Nathan <br>
+                    <img src="Photos/Nathan.jpg">
+                    <p>
+                        Grade: 12<br>
+                        <ul>
+                            <li>Height 10 feet standing on my money</li>
+                            <li>Honorary person of color</li>
+                            <li>Consistently injured</li>
+                            <li>Loves using average size sticks to fill in holes with balls</li>
+                            <li>Degenerate gambler</li>
+                            <li>Friend of Zach</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="content" id="Zachary">
+                    Zachary<br>
+                    <img src="Photos/Zach.jpg">
+                    <p>
+                        Grade: 12<br>
+                        <ul>
+                            <li>Height N/A</li>
+                            <li>Normal human strength</li>
+                            <li>Enjoys travelling</li>
+                            <li>Friends with Ajai</li>
+                            <li>Premium access to space lasers</li>
+                            <li>Co-leader of giant CoC</li>
+                            <li>Avid gambler <b>(it's not gambling if you know you're gonna win)</b></li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="content" id="Ryan">
+                    Ryan<br>
+                    <img src="Photos/Ryan.PNG">
+                    <p>
+                        Grade: 12<br>
+                        <ul>
+                            <li>Height starts with a 5</li>
+                            <li>I know HTML (How to talk to ladies)</li>
+                            <li>FBI permit (Female Body Inspector)</li>
+                            <li>Avid gambler</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="butt">
+                <div class="button">
+                    <button onclick="scrolldiv(), choosePerson()" id="myBtn">Choose</button>
+                </div>
+                <div class="buttons">
+                    <button class="but" id="backButton">Back</button>
+                    <button class="but" id="slideButton">Next</button>
+                </div>
+            </div>
+            <div id="form" class="form">
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLSefyq7QliAgKIxeWgxsDd7SBhOyCy6Vs1-d4792adGVov9buQ/formResponse" method="POST" target="hidden_iframe" onsubmit="submitForm()">
+                    <label for="name" class="question">Name: </label><br>
+                    <input type="text" id="name" name="entry.877086558" required>
+                    <br><br>
+                    <label class="question">Are you in Grade 12?</label>
+                    <div>
+                        <input type="radio" id="grade12" name="entry.203744935" value="Grade 12">
+                        <label for="grade12">Grade 12</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="notGrade12" name="entry.203744935" value="Not Grade 12">
+                        <label for="notGrade12">Not Grade 12</label>
+                    </div>
+                    <br>
+                    <label class="question">Choose Your Guy:</label>
+                    <div>
+                        <input type="checkbox" id="interest1" name="entry.559352220" value="Nathan">
+                        <label for="interest1">Nathan</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="interest2" name="entry.559352220" value="Zachary">
+                        <label for="interest2">Zachary</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="interest3" name="entry.559352220" value="Ryan">
+                        <label for="interest3">Ryan</label>
+                    </div>
+                    <br>
+                    <label class="question">Are you a woman?</label>
+                    <div>
+                        <input type="radio" id="option1" name="entry.150043696" value="Yes">
+                        <label for="option1">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="option2" name="entry.150043696" value="No">
+                        <label for="option2">No</label>
+                    </div>
+                    <br>
+                    <label class="question">Do you Breathe? Optional</label>
+                    <div>
+                        <input type="radio" id="option1" name="entry.413549524" value="Yes">
+                        <label for="option1">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="option2" name="entry.413549524" value="No">
+                        <label for="option2">No</label>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <script src="script.js"></script>
+        </main>
+        <footer>
+            Made by <a href="https://github.com/phl1m17" target="_blank">Anonymous Developer</a>
+        </footer>
+    </body>
+</html>

@@ -218,10 +218,10 @@ footer a {
 @media (max-width: 430px) {
     h1 {
         font-size: 50px;
-        margin: 25px 0;
+        margin: 25px 0px 15px 0;
     }
     .container {
-        height: 75vh;
+        height: 65vh;
     }
     .content {
         margin: 0 15px;
@@ -244,10 +244,10 @@ footer a {
 @media (max-width: 391px) {
     h1 {
         font-size: 50px;
-        margin: 10px 0 20px;
+        margin: 20px 0 15px;
     }
     .container {
-        height: 630px;
+        height: 550px;
     }
     .content p, 
     .content ul {
@@ -260,7 +260,7 @@ footer a {
         margin: 10px;
     }
     .container {
-        height: 500px;
+        height: 450px;
     }
     .content {
         width: 90%;
@@ -291,13 +291,10 @@ footer a {
     }
 }
 @media (max-width: 361px) {
-    h1 {
-        color: #4CAF50;
-    }
     .container {
         display: flex;
         flex-direction: column;
-        height: 560px;
+        height: 520px;
     }
     .content {
         padding: 6px 12px 12px;
@@ -306,6 +303,12 @@ footer a {
         box-shadow: 2px 2px rgba(28, 29, 30, 0.3);
         font-size: 25px;
         width: 90%;
+    }
+    .content p {
+        font-size: 20px;
+    }
+    .content li{
+        font-size: 15px;
     }
     img {
         width: 324px;
